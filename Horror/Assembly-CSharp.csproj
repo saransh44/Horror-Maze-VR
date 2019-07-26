@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Nokobot\ModernGuns_Handgun\Demo Assets\SimpleShoot.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -355,6 +356,7 @@
     <Compile Include="Assets\Scripts\FlameAnimations.cs" />
     <Compile Include="Assets\Scripts\PlayerCasting.cs" />
     <Compile Include="Assets\Sequences\AOpening.cs" />
+    <Compile Include="Assets\Sequences\BFirstTrigger.cs" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_DiffBump.shader" />
