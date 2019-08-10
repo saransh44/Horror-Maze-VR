@@ -22,10 +22,10 @@ public class SimpleShoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            GetComponent<Animator>().SetTrigger("Fire");
-        }
+        //if (Input.GetButtonDown("Fire1"))
+        //{
+           // GetComponent<Animator>().SetTrigger("Fire");
+        //}
     }
 
     void Shoot()
@@ -41,6 +41,10 @@ public class SimpleShoot : MonoBehaviour
        // Destroy(tempFlash, 0.5f);
         //  Instantiate(casingPrefab, casingExitLocation.position, casingExitLocation.rotation).GetComponent<Rigidbody>().AddForce(casingExitLocation.right * 100f);
        
+    }
+    public void TriggerShoot()
+    {
+        GetComponent<Animator>().SetTrigger("Fire");
     }
 
     void CasingRelease()

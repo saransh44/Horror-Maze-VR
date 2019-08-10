@@ -10,10 +10,12 @@ public class BFirstTrigger : MonoBehaviour
     public GameObject ThePlayer;
     public GameObject TextBox;
     public GameObject TheMarker;
-
+    public bool once = true;
     void OnTriggerEnter()
     {
+        this.GetComponent<BoxCollider>().enabled = false;
         //ThePlayer.GetComponent<OVRPlayerController>().enabled = false;
+        if (once)
         StartCoroutine(ScenePlayer());
     }
 
@@ -24,7 +26,7 @@ public class BFirstTrigger : MonoBehaviour
         TextBox.GetComponent<Text>().text = "";
         //ThePlayer.GetComponent<OVRPlayerController>().enabled = true;
         TheMarker.SetActive(true);
-
+        once = false;
     }
 
 }

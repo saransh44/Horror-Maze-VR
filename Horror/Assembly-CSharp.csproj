@@ -354,9 +354,14 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
     <Compile Include="Assets\Scripts\DoorCellOpen.cs" />
     <Compile Include="Assets\Scripts\FlameAnimations.cs" />
+    <Compile Include="Assets\Scripts\GlobalHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerCasting.cs" />
+    <Compile Include="Assets\Scripts\ShootIfGrabbed.cs" />
+    <Compile Include="Assets\Scripts\ZombieAI.cs" />
+    <Compile Include="Assets\Scripts\ZombieDeath.cs" />
     <Compile Include="Assets\Sequences\AOpening.cs" />
     <Compile Include="Assets\Sequences\BFirstTrigger.cs" />
+    <Compile Include="Assets\Sequences\JumpTrigger.cs" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_DiffBump.shader" />
