@@ -21,15 +21,20 @@ public class AItest : MonoBehaviour
     void Start()
     {
         newRot.x = 0;
+        newRot.y = transform.rotation.y;
+        newRot.z = transform.rotation.z;
     }
 
     void Update()
     {
+
         transform.LookAt(thePlayer.transform);
         if (attackTrigger == false)
         {
             enemySpeed = 0.01f;
             theEnemy.GetComponent<Animation>().Play("walk_in_place_1");
+            //transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed);
+
             newPos.x = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed).x;
             newPos.y = transform.position.y;
             newPos.z = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed).z;
@@ -38,8 +43,8 @@ public class AItest : MonoBehaviour
             newRot.z = transform.rotation.z;
 
             transform.position = newPos;
-            transform.rotation = newRot;
-            //transform.rotation = Quaternion()
+            transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
+            //transform.rotation = newRot;
         }
         if (attackTrigger == true && isAttacking == false)
         {

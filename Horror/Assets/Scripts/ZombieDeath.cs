@@ -29,8 +29,9 @@ public class ZombieDeath : MonoBehaviour
             TheEnemy.GetComponent<Animation>().Stop("walk 1");
             JumpScareMusic.Stop();
             TheEnemy.GetComponent<Animation>().Play("fallingback 1");
-            StartCoroutine(ScenePlayer());
-            SceneManager.LoadScene(2);
+            //StartCoroutine(ScenePlayer());
+            Destroy(gameObject, 0.66f);
+            //SceneManager.LoadScene(2);
 
         }
     }

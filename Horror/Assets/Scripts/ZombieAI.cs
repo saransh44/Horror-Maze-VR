@@ -24,6 +24,7 @@ public class ZombieAI : MonoBehaviour
 
     void Update()
     {
+        transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
         transform.LookAt(thePlayer.transform);
         if (attackTrigger == false)
         {
@@ -34,9 +35,10 @@ public class ZombieAI : MonoBehaviour
             newPos.x = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed).x;
             newPos.y = transform.position.y;
             newPos.z = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed).z;
-            newRot.x = 0;
-            newRot.y = transform.rotation.y;
-            newRot.z = transform.rotation.z;
+
+            //newRot.x = 0;
+            //newRot.y = transform.rotation.y;
+            //newRot.z = transform.rotation.z;
 
             transform.position = newPos;
             //transform.rotation = newRot;
@@ -54,6 +56,7 @@ public class ZombieAI : MonoBehaviour
     {
         attackTrigger = true;
         theEnemy.GetComponent<Animation>().Stop("walk_in_place_1");
+
     }
 
     void OnTriggerExit()

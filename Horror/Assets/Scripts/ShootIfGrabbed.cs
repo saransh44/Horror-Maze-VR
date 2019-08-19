@@ -12,6 +12,8 @@ public class ShootIfGrabbed : MonoBehaviour
     public float TargetDistance;
     public int DamageAmount = 5;
     public RaycastHit Shot;
+    public float rate = 0.4f;
+    private float rate_time;
 
     // Start is called before the first frame update
     void Start()
@@ -27,17 +29,25 @@ public class ShootIfGrabbed : MonoBehaviour
         if (ovrGrabbable.isGrabbed)
         {
             GuideArrow.SetActive(false);
-            if (OVRInput.GetDown(shootingButton, ovrGrabbable.grabbedBy.GetController()))
+            if (OVRInput.GetDown(shootingButton, ovrGrabbable.grabbedBy.GetController()) && Time.time > rate_time)
             {
+                rate_time = Time.time + rate;
                 simpleShoot.TriggerShoot();
                 GunFire.Play();
                 //yield return new WaitForSeconds(0.2f);
-                if (Physics.Raycast (transform.position, transform.TransformDirection (Vector3.forward), out Shot))
+                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Shot))
                 {
                     TargetDistance = Shot.distance;
                     Shot.transform.SendMessage("DamageZombie", DamageAmount, SendMessageOptions.DontRequireReceiver);
                 }
+                
             }
+            //StartCoroutine(ScenePlayer());
         }
+    }
+    IEnumerator ScenePlayer()
+    {
+        yield return new WaitForSeconds(1.5f);
+
     }
 }
