@@ -352,6 +352,7 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\Helpers\OVRMicInput.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
+    <Compile Include="Assets\Scripts\AItest.cs" />
     <Compile Include="Assets\Scripts\DoorCellOpen.cs" />
     <Compile Include="Assets\Scripts\FlameAnimations.cs" />
     <Compile Include="Assets\Scripts\GlobalHealth.cs" />
@@ -359,6 +360,7 @@
     <Compile Include="Assets\Scripts\ShootIfGrabbed.cs" />
     <Compile Include="Assets\Scripts\ZombieAI.cs" />
     <Compile Include="Assets\Scripts\ZombieDeath.cs" />
+    <Compile Include="Assets\Scripts\zombieScript.cs" />
     <Compile Include="Assets\Sequences\AOpening.cs" />
     <Compile Include="Assets\Sequences\BFirstTrigger.cs" />
     <Compile Include="Assets\Sequences\JumpTrigger.cs" />

@@ -14,6 +14,13 @@ public class ZombieAI : MonoBehaviour
     public AudioSource hurtSound2;
     public AudioSource hurtSound3;
     public int hurtGen;
+    Vector3 newPos;
+    Quaternion newRot;
+
+    void Start()
+    {
+        newRot.x = 0;
+    }
 
     void Update()
     {
@@ -21,8 +28,18 @@ public class ZombieAI : MonoBehaviour
         if (attackTrigger == false)
         {
             enemySpeed = 0.01f;
-            theEnemy.GetComponent<Animation>().Play("walk 1");
-            transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed);
+            theEnemy.GetComponent<Animation>().Play("walk_in_place_1");
+            //transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed);
+
+            newPos.x = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed).x;
+            newPos.y = transform.position.y;
+            newPos.z = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed).z;
+            newRot.x = 0;
+            newRot.y = transform.rotation.y;
+            newRot.z = transform.rotation.z;
+
+            transform.position = newPos;
+            //transform.rotation = newRot;
         }
         if (attackTrigger == true && isAttacking == false)
         {
@@ -36,13 +53,13 @@ public class ZombieAI : MonoBehaviour
     void OnTriggerEnter()
     {
         attackTrigger = true;
-        theEnemy.GetComponent<Animation>().Stop("walk 1");
+        theEnemy.GetComponent<Animation>().Stop("walk_in_place_1");
     }
 
     void OnTriggerExit()
     {
         attackTrigger = false;
-        theEnemy.GetComponent<Animation>().Play("walk 1");
+        theEnemy.GetComponent<Animation>().Play("walk_in_place_1");
 
     }
 

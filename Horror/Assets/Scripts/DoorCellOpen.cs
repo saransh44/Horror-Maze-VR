@@ -19,14 +19,14 @@ public class DoorCellOpen : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (TheDistance <= 5)
+        if (TheDistance <= 10)
         {
             ActionDisplay.SetActive(true);
             ActionText.SetActive(true);
         }
         if (Input.GetButtonDown("Oculus_CrossPlatform_Button2"))
         {
-            if (TheDistance <= 5)
+            if (TheDistance <= 10)
             {
                 this.GetComponent<BoxCollider>().enabled = false;
                 ActionDisplay.SetActive(false);

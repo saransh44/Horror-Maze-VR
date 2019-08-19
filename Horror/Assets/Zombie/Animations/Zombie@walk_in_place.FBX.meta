@@ -383,12 +383,17 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Bip01 Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip01 L Thigh' has translation
+      animation that will be discarded.\n\t'Bip01 R Thigh' has translation animation
+      that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -467,211 +472,211 @@ ModelImporter:
     serializedVersion: 3
     human: []
     skeleton:
-    - name: Zombie(Clone)
+    - name: Zombie@walk_in_place(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: ' Head'
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
     - name: ' L Forearm'
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ' L Pelvis'
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ' L Thigh'
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ' R Pelvis'
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ' R Thigh'
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip01
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0.8729375, z: -0.0032746887}
-      rotation: {x: -0.50000036, y: 0.49999967, z: 0.49999967, w: 0.50000036}
-      scale: {x: 0.9999999, y: 0.9999999, z: 1}
-    - name: Bip01 Pelvis
-      parentName: Bip01
-      position: {x: 0, y: 0, z: 0.030417085}
-      rotation: {x: -0.5, y: 0.5, z: 0.49999934, w: 0.50000066}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
-    - name: Bip01 Spine
-      parentName: Bip01 Pelvis
-      position: {x: -0.09209221, y: -0.00021041452, z: 0.00000012800527}
-      rotation: {x: -0.0000020018456, y: 0.00000062178015, z: 0.09843173, w: 0.99514383}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
-    - name: Bip01 L Thigh
-      parentName: Bip01 Spine
-      position: {x: 0.09034889, y: -0.017835407, z: 0.0801167}
-      rotation: {x: 0.10198444, y: 0.99180675, z: -0.007667819, w: 0.07654933}
-      scale: {x: 1, y: 1.0000001, z: 1}
-    - name: Bip01 L Calf
-      parentName: Bip01 L Thigh
-      position: {x: -0.40058425, y: 0, z: 0}
-      rotation: {x: -0.0000000039786157, y: -0.000000007833632, z: 0.088544354, w: 0.99607223}
-      scale: {x: 1.0000001, y: 1, z: 1}
-    - name: Bip01 L Foot
-      parentName: Bip01 L Calf
-      position: {x: -0.40058425, y: 0, z: 0}
-      rotation: {x: -0.10165291, y: 0.08623438, z: -0.083217114, w: 0.9875755}
-      scale: {x: 1, y: 0.99999994, z: 1}
-    - name: Bip01 L Toe0
-      parentName: Bip01 L Foot
-      position: {x: -0.09213435, y: 0.118572555, z: 0}
-      rotation: {x: -0.000000015454312, y: 0.000000015454312, z: -0.7071068, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip01 R Thigh
-      parentName: Bip01 Spine
-      position: {x: 0.09034889, y: -0.017834948, z: -0.08011678}
-      rotation: {x: 0.101984255, y: 0.99180675, z: 0.007670498, w: -0.07654973}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
-    - name: Bip01 R Calf
-      parentName: Bip01 R Thigh
-      position: {x: -0.40058428, y: 0.0000000011920929, z: 0.000000019073486}
-      rotation: {x: 0.0000000014635798, y: 0.000000015090022, z: 0.088544354, w: 0.99607223}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1}
-    - name: Bip01 R Foot
-      parentName: Bip01 R Calf
-      position: {x: -0.40058422, y: -0.000000009536743, z: 0}
-      rotation: {x: 0.10165291, y: -0.08623447, z: -0.08321711, w: 0.9875754}
-      scale: {x: 0.99999994, y: 0.9999999, z: 1}
-    - name: Bip01 R Toe0
-      parentName: Bip01 R Foot
-      position: {x: -0.09213435, y: 0.11857254, z: 0}
-      rotation: {x: 0.000000015454313, y: -0.000000015454313, z: -0.7071068, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip01 Spine1
-      parentName: Bip01 Spine
-      position: {x: -0.2695715, y: -0.00020002364, z: -5.54719e-10}
-      rotation: {x: -9.823442e-14, y: 0.00000015035671, z: -0.05420994, w: 0.9985296}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip01 Neck
-      parentName: Bip01 Spine1
-      position: {x: -0.25273368, y: -0.000066537854, z: -1.845001e-10}
-      rotation: {x: 1.5262368e-14, y: 0.0000011396826, z: -0.41090375, w: 0.91167873}
-      scale: {x: 1, y: 1, z: 0.99999994}
-    - name: Bip01 Head
-      parentName: Bip01 Neck
-      position: {x: -0.12610061, y: 0, z: 0}
-      rotation: {x: -4.9632846e-13, y: -0.0000009903237, z: 0.35705414, w: 0.9340837}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
-    - name: Bone01
-      parentName: Bip01 Head
-      position: {x: -0.01947052, y: 0.027223773, z: 0}
-      rotation: {x: -0.58497006, y: 0.8110549, z: 0.00000041840318, w: 0.0000005801117}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-    - name: Bip01 L Clavicle
-      parentName: Bip01 Neck
-      position: {x: -0, y: 0.000100326535, z: 0.028040826}
-      rotation: {x: -0.57404083, y: -0.25900236, z: 0.70805144, w: -0.31946525}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
-    - name: Bip01 L UpperArm
-      parentName: Bip01 L Clavicle
-      position: {x: -0.15238847, y: 0.000000009536743, z: 0}
-      rotation: {x: -0.11664296, y: 0.078782454, z: 0.002899706, w: 0.99004006}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
-    - name: Bip01 L Forearm
-      parentName: Bip01 L UpperArm
-      position: {x: -0.31570095, y: -0.000000038146972, z: 0}
-      rotation: {x: -0.0063674115, y: 0.020914027, z: 0.04122542, w: 0.99891067}
-      scale: {x: 0.99999994, y: 0.99999994, z: 1}
-    - name: Bip01 L Hand
-      parentName: Bip01 L Forearm
-      position: {x: -0.24035, y: -0.000000038146972, z: 0.00000015258789}
-      rotation: {x: -0.6549012, y: -0.11037253, z: -0.2659261, w: 0.6987171}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
-    - name: Bip01 R Clavicle
-      parentName: Bip01 Neck
-      position: {x: -0, y: 0.00010047913, z: -0.02804082}
-      rotation: {x: 0.57403994, y: 0.2590004, z: 0.7080522, w: -0.3194668}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Bip01 R UpperArm
-      parentName: Bip01 R Clavicle
-      position: {x: -0.15238845, y: 0.0000000047683715, z: 0}
-      rotation: {x: 0.116643, y: -0.07878099, z: 0.0028995269, w: 0.99004024}
-      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
-    - name: Bip01 R Forearm
-      parentName: Bip01 R UpperArm
-      position: {x: -0.31570107, y: -0.000000038146972, z: 0}
-      rotation: {x: 0.006367503, y: -0.020914288, z: 0.041225363, w: 0.9989107}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: Bip01 R Hand
-      parentName: Bip01 R Forearm
-      position: {x: -0.24034995, y: -0.000000076293944, z: -0.000000076293944}
-      rotation: {x: 0.6549012, y: 0.11037252, z: -0.26592615, w: 0.6987171}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L Calf
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L Hand
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L Spine
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L Spine1
-      parentName: Zombie(Clone)
+      parentName: Zombie@walk_in_place(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: L UpperArm
-      parentName: Zombie(Clone)
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ' Head'
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L Hand
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L Calf
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L Spine
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L Spine1
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ' R Pelvis'
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ' L Thigh'
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ' R Thigh'
+      parentName: Zombie@walk_in_place(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: R Calf
-      parentName: Zombie(Clone)
+      parentName: Zombie@walk_in_place(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-    - name: R Forearm
-      parentName: Zombie(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R Hand
-      parentName: Zombie(Clone)
+    - name: ' L Pelvis'
+      parentName: Zombie@walk_in_place(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: R Spine
-      parentName: Zombie(Clone)
+      parentName: Zombie@walk_in_place(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: R Spine1
-      parentName: Zombie(Clone)
+      parentName: Zombie@walk_in_place(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: R UpperArm
-      parentName: Zombie(Clone)
+      parentName: Zombie@walk_in_place(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
+    - name: R Forearm
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R Hand
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip01
+      parentName: Zombie@walk_in_place(Clone)
+      position: {x: -0, y: 0.8248456, z: 0.14795521}
+      rotation: {x: -0.5000004, y: 0.4999997, z: 0.49999964, w: 0.5000003}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: Bip01 Pelvis
+      parentName: Bip01
+      position: {x: -0.000000013656107, y: -0.000000007450581, z: 0.076370485}
+      rotation: {x: 0.5, y: -0.5000007, z: -0.4999993, w: -0.5}
+      scale: {x: 1.0000025, y: 1.0000025, z: 1.0000025}
+    - name: Bip01 Spine
+      parentName: Bip01 Pelvis
+      position: {x: -0.092137374, y: -0.00021358489, z: -0.000020445892}
+      rotation: {x: -0.0000021755695, y: -0.0000008493662, z: 0.09843166, w: 0.9951439}
+      scale: {x: 1.0000079, y: 1.0000063, z: 1.0000045}
+    - name: Bip01 L Thigh
+      parentName: Bip01 Spine
+      position: {x: 0.09446098, y: 0.0092584705, z: 0.07682929}
+      rotation: {x: 0.10198434, y: 0.9918068, z: -0.007667795, w: 0.07654929}
+      scale: {x: 1.000005, y: 1.0000037, z: 1.0000062}
+    - name: Bip01 L Calf
+      parentName: Bip01 L Thigh
+      position: {x: -0.40058416, y: 0, z: 0.000000019073486}
+      rotation: {x: -0, y: -0.00000008940697, z: 0.08854443, w: 0.9960723}
+      scale: {x: 0.9999988, y: 1.0000001, z: 1.0000002}
+    - name: Bip01 L Foot
+      parentName: Bip01 L Calf
+      position: {x: -0.40058434, y: -0.000000038146972, z: 0}
+      rotation: {x: -0.10165286, y: 0.08623442, z: -0.083217114, w: 0.9875754}
+      scale: {x: 0.99999946, y: 0.9999994, z: 0.9999999}
+    - name: Bip01 L Toe0
+      parentName: Bip01 L Foot
+      position: {x: -0.09213435, y: 0.11857254, z: 0}
+      rotation: {x: -0.000000044703473, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1.0000004, y: 0.99999964, z: 1.0000002}
+    - name: Bip01 R Thigh
+      parentName: Bip01 Spine
+      position: {x: 0.08969703, y: -0.0061027333, z: -0.08259501}
+      rotation: {x: 0.10198417, y: 0.99180675, z: 0.007670493, w: -0.07654976}
+      scale: {x: 1.0000029, y: 1.0000015, z: 1.0000031}
+    - name: Bip01 R Calf
+      parentName: Bip01 R Thigh
+      position: {x: -0.40058422, y: 0, z: 0}
+      rotation: {x: -0.000000099651494, y: 0.000000037252896, z: 0.08854442, w: 0.99607223}
+      scale: {x: 1.0000006, y: 1.0000019, z: 1.0000011}
+    - name: Bip01 R Foot
+      parentName: Bip01 R Calf
+      position: {x: -0.40058437, y: 0.000000047683713, z: -0.000000019073486}
+      rotation: {x: 0.10165298, y: -0.08623449, z: -0.08321709, w: 0.9875755}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000007}
+    - name: Bip01 R Toe0
+      parentName: Bip01 R Foot
+      position: {x: -0.09213434, y: 0.11857252, z: 0}
+      rotation: {x: 0.000000022351736, y: -0.000000052154054, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000004}
+    - name: Bip01 Spine1
+      parentName: Bip01 Spine
+      position: {x: -0.26960564, y: -0.00019327163, z: -0.0000060629845}
+      rotation: {x: 9.399627e-10, y: 0.00000020700824, z: -0.05420991, w: 0.9985296}
+      scale: {x: 1.0000017, y: 1.0000018, z: 1.0000018}
+    - name: Bip01 Neck
+      parentName: Bip01 Spine1
+      position: {x: -0.25273383, y: -0.00006645203, z: -0.0000000047683715}
+      rotation: {x: -0.000000029802319, y: 0.0000011026858, z: -0.4109037, w: 0.91167873}
+      scale: {x: 1.0000015, y: 1.0000038, z: 1.0000018}
+    - name: Bip01 L Clavicle
+      parentName: Bip01 Neck
+      position: {x: -0.000000076293944, y: 0.000100326535, z: 0.028040823}
+      rotation: {x: -0.5740408, y: -0.25900245, z: 0.7080515, w: -0.31946522}
+      scale: {x: 0.9999991, y: 1.0000018, z: 1.000002}
+    - name: Bip01 L UpperArm
+      parentName: Bip01 L Clavicle
+      position: {x: -0.1523885, y: 0.000000038146972, z: 0}
+      rotation: {x: -0.122465104, y: 0.07424406, z: 0.026511883, w: 0.98933685}
+      scale: {x: 0.9999986, y: 1.0000066, z: 1.0000037}
+    - name: Bip01 L Forearm
+      parentName: Bip01 L UpperArm
+      position: {x: -0.31570098, y: 0, z: 0}
+      rotation: {x: 0.0060356082, y: -0.01982513, z: -0.04292686, w: -0.99886334}
+      scale: {x: 0.9999999, y: 1.0000012, z: 1.0000007}
+    - name: Bip01 L Hand
+      parentName: Bip01 L Forearm
+      position: {x: -0.24035, y: 0, z: 0}
+      rotation: {x: -0.6549012, y: -0.11037258, z: -0.26592603, w: 0.6987171}
+      scale: {x: 1.0000014, y: 1.000001, z: 0.9999998}
+    - name: Bip01 Head
+      parentName: Bip01 Neck
+      position: {x: -0.12610061, y: -0.000000076293944, z: -0.0000000047683715}
+      rotation: {x: -0.000000059349322, y: 0.000000964742, z: -0.35705417, w: -0.93408376}
+      scale: {x: 0.99999905, y: 0.9999987, z: 0.99999917}
+    - name: Bone01
+      parentName: Bip01 Head
+      position: {x: -0.019470824, y: 0.0272237, z: 0}
+      rotation: {x: 0.619791, y: -0.78476703, z: -0.00000046783208, w: -0.0000004793874}
+      scale: {x: 0.99999857, y: 0.99999946, z: 1}
+    - name: Bip01 R Clavicle
+      parentName: Bip01 Neck
+      position: {x: -0, y: 0.00010040283, z: -0.028040823}
+      rotation: {x: 0.57403994, y: 0.25900024, z: 0.7080522, w: -0.3194669}
+      scale: {x: 1.000006, y: 1.000003, z: 1.0000021}
+    - name: Bip01 R UpperArm
+      parentName: Bip01 R Clavicle
+      position: {x: -0.15238844, y: 0, z: 0}
+      rotation: {x: 0.11079318, y: -0.08299573, z: -0.02067331, w: 0.9901561}
+      scale: {x: 1.0000033, y: 1.0000056, z: 1.0000008}
+    - name: Bip01 R Forearm
+      parentName: Bip01 R UpperArm
+      position: {x: -0.31570107, y: 0, z: 0.000000076293944}
+      rotation: {x: 0.0066528223, y: -0.021854099, z: 0.0393493, w: 0.9989643}
+      scale: {x: 1.0000038, y: 1.0000024, z: 1.0000017}
+    - name: Bip01 R Hand
+      parentName: Bip01 R Forearm
+      position: {x: -0.24035004, y: 0.000000076293944, z: 0}
+      rotation: {x: 0.6549013, y: 0.11037253, z: -0.265926, w: 0.6987172}
+      scale: {x: 0.9999993, y: 1.0000015, z: 0.9999991}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -685,7 +690,7 @@ ModelImporter:
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 3
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
