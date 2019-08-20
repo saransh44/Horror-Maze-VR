@@ -19,10 +19,18 @@ public class AOpening : MonoBehaviour
 
     IEnumerator ScenePlayer()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(3f);
         FadeScreenIn.SetActive(false);
-        TextBox.GetComponent<Text>().text = "I need to get out of here.";
-        yield return new WaitForSeconds(2);
+        TextBox.GetComponent<Text>().text = "Bad Shroom Trip";
+        yield return new WaitForSeconds(2f);
+        TextBox.GetComponent<Text>().text = "Goal: Interact with mushrooms to find the kinds for suitable antitdote";
+        yield return new WaitForSeconds(4);
+        TextBox.GetComponent<Text>().text = "Be careful! They all look alike but most are shrooms";
+        yield return new WaitForSeconds(4);
+        TextBox.GetComponent<Text>().text = "Releasing hallucinations of zombies walking through walls just for you :)";
+        yield return new WaitForSeconds(4);
+        TextBox.GetComponent<Text>().text = "Begin";
+        yield return new WaitForSeconds(1.5f);
         TextBox.GetComponent<Text>().text = "";
         //ThePlayer.GetComponent<OVRPlayerController>().enabled = true;
 

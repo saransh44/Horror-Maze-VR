@@ -7,7 +7,7 @@ public class ZombieAI : MonoBehaviour
 
     public GameObject thePlayer;
     public GameObject theEnemy;
-    public float enemySpeed = 0.01f;
+    public float enemySpeed = 0.1f;
     public bool attackTrigger = false;
     public bool isAttacking = false;
     public AudioSource hurtSound1;

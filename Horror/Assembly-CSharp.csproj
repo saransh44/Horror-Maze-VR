@@ -356,6 +356,9 @@
     <Compile Include="Assets\Scripts\DoorCellOpen.cs" />
     <Compile Include="Assets\Scripts\FlameAnimations.cs" />
     <Compile Include="Assets\Scripts\GlobalHealth.cs" />
+    <Compile Include="Assets\Scripts\MushCollideWin.cs" />
+    <Compile Include="Assets\Scripts\mushroomWin.cs" />
+    <Compile Include="Assets\Scripts\mushZombieSpawn.cs" />
     <Compile Include="Assets\Scripts\PlayerCasting.cs" />
     <Compile Include="Assets\Scripts\ShootIfGrabbed.cs" />
     <Compile Include="Assets\Scripts\ZombieAI.cs" />

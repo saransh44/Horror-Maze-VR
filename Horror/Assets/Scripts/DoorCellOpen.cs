@@ -7,7 +7,7 @@ public class DoorCellOpen : MonoBehaviour
 {
 
     public float TheDistance;
-    public GameObject ActionDisplay;
+    public GameObject ActionKey;
     public GameObject ActionText;
     public GameObject DoorHinge;
     public AudioSource CreakSound;
@@ -21,7 +21,7 @@ public class DoorCellOpen : MonoBehaviour
     {
         if (TheDistance <= 10)
         {
-            ActionDisplay.SetActive(true);
+            ActionKey.SetActive(true);
             ActionText.SetActive(true);
         }
         if (Input.GetButtonDown("Oculus_CrossPlatform_Button2"))
@@ -29,7 +29,7 @@ public class DoorCellOpen : MonoBehaviour
             if (TheDistance <= 10)
             {
                 this.GetComponent<BoxCollider>().enabled = false;
-                ActionDisplay.SetActive(false);
+                ActionKey.SetActive(false);
                 ActionText.SetActive(false);
                 DoorHinge.GetComponent<Animation>().Play("FirstDoorOpenAnim");
                 CreakSound.Play();
@@ -39,7 +39,7 @@ public class DoorCellOpen : MonoBehaviour
 
     void OnMouseExit()
     {
-        ActionDisplay.SetActive(false);
+        ActionKey.SetActive(false);
         ActionText.SetActive(false);
     }
 }
