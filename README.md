@@ -1,5 +1,5 @@
 # Horror-Games
-An open source VR Horror project made with Unity's native RiftSDK with general to specifc questions in readme for all kinds of perspective VR developers (mainly meant for those who already are literate with c# and Unity but need some VR pointers) 
+An open source VR Horror project made with Unity's native RiftSDK with general to specific questions in readme for all kinds of perspective VR developers (mainly meant for those who already are literate with c# and Unity but need some VR pointers) 
 
 Most tutorials are sorely outdated so here is a list of those that are still helpful at the august 2019 writing of this readme. 
 For any perspective developers struggling to make components work like say UI and Text in the vr display, please don't be shy! Download this opensource project and just click on my assets in my scene001 to see how I did it.
