@@ -14,6 +14,7 @@ public class ShootIfGrabbed : MonoBehaviour
     public RaycastHit Shot;
     public float rate = 0.4f;
     private float rate_time;
+    public bool grabbed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class ShootIfGrabbed : MonoBehaviour
     {
         if (ovrGrabbable.isGrabbed)
         {
+            
             GuideArrow.SetActive(false);
             if (OVRInput.GetDown(shootingButton, ovrGrabbable.grabbedBy.GetController()) && Time.time > rate_time)
             {
