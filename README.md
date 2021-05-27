@@ -80,7 +80,7 @@ Then, in the inspector go to rig and change it to legacy. Then import it in. Mak
 
 ## VR Hardware Troubleshooting
 #### I keep on getting black screens!?
-Yea. No. I wasn't kidding the Oculus Rift S is a messy buggy piece of shit sometimes. They really outta have tested the device more. Here are 7 things to try:
+Yea. No. I wasn't kidding the Oculus Rift S is a buggy piece of shit sometimes. They really ought to have tested the device more. Here are 7 things to try:
 1. Check all wires? No cuts. No loose ones?
 2. Make sure all detection is picked up in oculus app with green check marks
 3. Check your Nvidia Optimus settings so that the right graphics card is being picked up in Nvidia Control Panel
