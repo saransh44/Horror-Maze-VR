@@ -99,3 +99,5 @@ If your system can afford it, try increasing VRAM in BIOS which helps the GPU. I
 Get a laptop fan. 
 Try a power USB hub with an external power adapter to mitigate the load of your laptop a little.
 Also don't be stupid. Monitor and turn it off after an hour of intense VR gaming if it is still running hot.
+
+Happy coding!
