@@ -78,4 +78,24 @@ Then, in the inspector go to rig and change it to legacy. Then import it in. Mak
 **Reverse Engineering:** scene001 > Enemies asset group
 
 
-There really isn't enough good documentation or tutorials of oculus non-GO online so hopefully this helps solve some issues for developers. Thanks. Happy gaming! 
+## VR Hardware Troubleshooting
+#### I keep on getting black screens!?
+Yea. No. I wasn't kidding the Oculus Rift S is a messy buggy piece of shit sometimes. They really outta have tested the device more. Here are 7 things to try:
+1. Check all wires? No cuts. No loose ones?
+2. Make sure all detection is picked up in oculus app with green check marks
+3. Check your Nvidia Optimus settings so that the right graphics card is being picked up in Nvidia Control Panel
+4. Make sure oculus is recognized in Device Manager and check the error log by clicking on the device in manager
+5. Update all drivers from Nvidia to Oculus to BIOS
+6. Roll back Winsows(Few times this is the issue esp with 20H2 according to few reddit users)
+7. Try disabling your IGPU in device manager > display adapters so that your DGPU is forced to take over. You can reenable the IGPU later. (This is what worked for me)
+
+#### Sometimes, Oculus stops responding?
+Make sure USB suspend settings are off in your power plans
+
+#### Slow video speed and responsiveness?
+If your system can afford it, try increasing VRAM in BIOS which helps the GPU. I had to do this actually. Know that in some systems with IGPUs mostly, allocating more VRAM means less available for the system. Online material on VRAM and RAM is slightly confusing. DGPU's have their own VRAM. IGPU's require a little more setting management. I have an excellent Asus ROG gaming laptop with 6GB 1660TI DGPU. I still had to increase my VRAM bios setting because VRAM helps with texture mapping and in the 3D VR world, its important to have things rendered so that they look good yes, but also having more information in the closest memory access space of VRAM means that when trying to do collisions on the texture mapping, this process is simply faster. VRAM does help with performance not just graphical looks depsite what old internet articles might say about it because most of them aren't considering the interactive graphical nature of VR.
+
+#### Overheating?
+Get a laptop fan. 
+Try a power USB hub with an external power adapter to mitigate the load of your laptop a little.
+Also don't be stupid. Monitor and turn it off after an hour of intense VR gaming if it is still running hot.
